@@ -1,0 +1,193 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'mifuente', sans-serif;
+  color: #fff;
+  background: #0a0a0a;
+}
+
+/* Estilos del header */
+header {
+  display: flex; /* Alinea los elementos horizontalmente */
+  justify-content: space-between; /* Título a la izquierda y menú a la derecha */
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 15px 20px;
+  background: #141414;
+}
+
+/* Título del header */
+header h1 {
+  font-family: 'otrafuente', serif;
+  margin: 0;
+}
+
+/* Estilos del menú */
+nav {
+  display: flex; /* Muestra los elementos en línea */
+}
+
+nav ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  display: flex; /* Alinea los elementos horizontalmente */
+  gap: 20px; /* Espaciado entre los elementos */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  font-family: 'StretchPro', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00ff7f; /* Cambia a verde al hacer hover */
+}
+
+/* Estilos para la sección hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(90deg, #141414, #0a0a0a);
+}
+
+.hero h2 {
+  font-size: 30px;
+  color: #00ff7f;
+}
+
+.hero .btn-comenzar {
+  padding: 10px 20px;
+  background: #00ff7f;
+  color: #0a0a0a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  
+  .hero .btn-comenzar {
+    padding: 15px 20px;
+    background: #00ff7f;
+    color: #0a0a0a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el portafolio */
+  .portafolio {
+    padding: 50px 20px;
+    background: #0a0a0a;
+  }
+  
+  .portafolio h2 {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  
+  /* Estilos para las imágenes en el portafolio */
+.trabajos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.trabajo-item {
+  flex: 1 1 250px; /* Ajusta el tamaño de cada imagen (más pequeño que antes) */
+  text-align: center;
+  background: #141414;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.trabajo-item img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho de su contenedor */
+  max-width: 300px; /* Limita el tamaño máximo de las imágenes */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 10px;
+}
+  
+  /* Estilos para la sección acerca de */
+  .acerca {
+    padding: 50px 20px;
+    background: #141414;
+  }
+  
+  .acerca h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .acerca p {
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  /* Estilos para la sección de contacto */
+  .contacto {
+    padding: 50px 20px;
+    background: #0a0a0a;
+  }
+  
+  .contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .contacto input, .contacto textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .contacto button {
+    padding: 10px 20px;
+    background: #00ff7f;
+    color: #0a0a0a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilos del pie de página */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #141414;
+    color: #888;
+  }
+  
+  /* Cargar las fuentes personalizadas */
+  @font-face {
+    font-family: 'MiFuente'; /* Nombre personalizado de la fuente */
+    src: url('./fonts/CaviarDreams_Italic.ttf') format('truetype'); /* Ruta al archivo */
+  }
+  
+  @font-face {
+    font-family: 'OtraFuente';
+    src: url('./fonts/StretchPro.otf') format('opentype'); /* Formato opentype */
+  }
+  
